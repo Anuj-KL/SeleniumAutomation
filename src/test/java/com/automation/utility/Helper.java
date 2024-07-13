@@ -9,6 +9,7 @@ import java.util.Date;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 
 public class Helper {
@@ -38,20 +39,20 @@ public class Helper {
 		return dateFormat.format(currentDate);
 	}
 
-	/*
-	public void handleAlert() {
-		
+	
+	public void handleAlert(WebDriver driver) {
+		driver.switchTo().alert().accept();
 	}
 
 	
-	public void switchFrame() {
-		
+	public void switchFrame(WebDriver driver, WebElement element) {
+		driver.switchTo().frame(element);
 	}
 
 	
-	public void switchWindlow() {
-		
+	public void switchWindlow(WebDriver driver,String s) {
+		driver.switchTo().window(s);
 	}
 	
-	*/
+	
 }
