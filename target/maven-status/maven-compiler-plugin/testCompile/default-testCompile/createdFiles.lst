@@ -1,7 +1,0 @@
-com\automation\utility\ExcelDataReader.class
-com\automation\tests\LoginPageTest.class
-com\automation\pages\LoginPage.class
-com\automation\utility\ConfigReader.class
-com\automation\utility\Helper.class
-com\automation\pages\BaseClass.class
-com\automation\utility\BrowserUtility.class
