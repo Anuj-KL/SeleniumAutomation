@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sanity Suite">
+    <test name="Sanity Tests">
+        <classes>
+            <class name="com.automation.LoginPageTest"/>
+            <!-- Add more classes as needed -->
+        </classes>
+    </test>
+</suite>

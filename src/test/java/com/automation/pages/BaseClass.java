@@ -11,6 +11,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
 import com.automation.utility.BrowserUtility;
+import com.automation.utility.ConfigReader;
 import com.automation.utility.ExcelDataReader;
 import com.automation.utility.Helper;
 import com.aventstack.extentreports.ExtentReports;
@@ -26,6 +27,7 @@ public class BaseClass {
     public ExtentTest logger;
     Helper helper = new Helper();
     
+    String browserName = (System.getProperty("browser")!=null)?System.getProperty("browser"):ConfigReader.getValueFromConfig("browser");
     
     @BeforeSuite
     public void setUpSuite() {
@@ -42,7 +44,7 @@ public class BaseClass {
 	
 	@BeforeClass
 	public void setUp() {
-		driver = BrowserUtility.setBrowser(driver, "Chrome", "https://ui.cogmento.com");
+		driver = BrowserUtility.setBrowser(driver, browserName, "https://ui.cogmento.com");
 	}
 	
 

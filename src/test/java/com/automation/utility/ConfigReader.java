@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-	Properties properties;
+	static Properties properties;
 	
 	public ConfigReader() {
 		File src = new File("./Config/config.properties");
@@ -21,7 +21,7 @@ public class ConfigReader {
 		}
 	}
 	
-	public String getValueFromConfig(String key) {
+	public static String getValueFromConfig(String key) {
 		return properties.getProperty(key);
 	}
 	
