@@ -19,8 +19,8 @@ public class LoginPageTest extends BaseClass {
 		LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
 		logger.info("Starting application");
 		
-		loginPage.loginToApplication("aklawaniyan11@gmailcom", "Anuj@11@");	
-		Assert.assertFalse(true);
+		loginPage.loginToApplication(excel.getStringData("UserData", 0, 0), excel.getStringData("UserData", 0, 1));	
+		
 		
 	}
 }

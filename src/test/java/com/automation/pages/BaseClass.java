@@ -25,9 +25,10 @@ public class BaseClass {
     public ExcelDataReader excel;   
     public ExtentReports report;
     public ExtentTest logger;
+    public ConfigReader configReader;
     Helper helper = new Helper();
     
-    String browserName = (System.getProperty("browser")!=null)?System.getProperty("browser"):ConfigReader.getValueFromConfig("browser");
+    //String browserName = (System.getProperty("browser")!=null)?System.getProperty("browser"):ConfigReader.getValueFromConfig("browser");
     
     @BeforeSuite
     public void setUpSuite() {
@@ -35,6 +36,7 @@ public class BaseClass {
     	Reporter.log("Suite is getting ready", true);
     	excel = new ExcelDataReader();
     	report= new ExtentReports();
+    	configReader = new ConfigReader();
     	ExtentSparkReporter spark = new ExtentSparkReporter(new File(System.getProperty("user.dir") + "/Reports/spark.html"));
     	
     	report.attachReporter(spark);
@@ -44,7 +46,7 @@ public class BaseClass {
 	
 	@BeforeClass
 	public void setUp() {
-		driver = BrowserUtility.setBrowser(driver, browserName, "https://ui.cogmento.com");
+		driver = BrowserUtility.setBrowser(driver, configReader.getValueFromConfig("browser"), "https://ui.cogmento.com");
 	}
 	
 
@@ -52,7 +54,6 @@ public class BaseClass {
 	public void tearDownMethod(ITestResult result) {
 		
 		if(result.getStatus()==ITestResult.FAILURE) {
-			logger.fail("Failed");
 			logger.addScreenCaptureFromPath(helper.captureScreenShot(driver));
 		}
 		

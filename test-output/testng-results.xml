@@ -8,23 +8,23 @@
       <![CDATA[Session has been ended]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-07-14T17:17:53 IST" name="Regression" finished-at="2024-07-14T17:18:00 IST" duration-ms="6692">
+  <suite started-at="2024-07-14T23:42:50 IST" name="Default suite" finished-at="2024-07-14T23:42:58 IST" duration-ms="7835">
     <groups>
     </groups>
-    <test started-at="2024-07-14T17:17:53 IST" name="Regression1" finished-at="2024-07-14T17:18:00 IST" duration-ms="6692">
+    <test started-at="2024-07-14T23:42:50 IST" name="Default test" finished-at="2024-07-14T23:42:58 IST" duration-ms="7835">
       <class name="com.automation.tests.LoginPageTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.tests.LoginPageTest@36fc695d]" started-at="2024-07-14T17:17:53 IST" name="setUpSuite" finished-at="2024-07-14T17:17:53 IST" duration-ms="633" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.automation.tests.LoginPageTest@3c41ed1d]" started-at="2024-07-14T23:42:49 IST" name="setUpSuite" finished-at="2024-07-14T23:42:50 IST" duration-ms="620" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Suite is getting ready]]>
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginPageTest@36fc695d]" started-at="2024-07-14T17:17:53 IST" name="setUp" finished-at="2024-07-14T17:17:59 IST" duration-ms="5899" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.automation.tests.LoginPageTest@3c41ed1d]" started-at="2024-07-14T23:42:50 IST" name="setUp" finished-at="2024-07-14T23:42:57 IST" duration-ms="6890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginPage()[pri:0, instance:com.automation.tests.LoginPageTest@36fc695d]" started-at="2024-07-14T17:17:59 IST" name="testLoginPage" finished-at="2024-07-14T17:18:00 IST" duration-ms="307" status="FAIL">
+        <test-method signature="testLoginPage()[pri:0, instance:com.automation.tests.LoginPageTest@3c41ed1d]" started-at="2024-07-14T23:42:57 IST" name="testLoginPage" finished-at="2024-07-14T23:42:57 IST" duration-ms="352" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [false] but found [true]]]>
@@ -68,18 +68,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginPage -->
-        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginPageTest@36fc695d]" started-at="2024-07-14T17:18:00 IST" name="tearDownMethod" finished-at="2024-07-14T17:18:00 IST" duration-ms="445" status="PASS">
+        <test-method is-config="true" signature="tearDownMethod(org.testng.ITestResult)[pri:0, instance:com.automation.tests.LoginPageTest@3c41ed1d]" started-at="2024-07-14T23:42:57 IST" name="tearDownMethod" finished-at="2024-07-14T23:42:58 IST" duration-ms="553" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLoginPage status=FAILURE method=LoginPageTest.testLoginPage()[pri:0, instance:com.automation.tests.LoginPageTest@36fc695d] output={null}]]]>
+                <![CDATA[[TestResult name=testLoginPage status=FAILURE method=LoginPageTest.testLoginPage()[pri:0, instance:com.automation.tests.LoginPageTest@3c41ed1d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.tests.LoginPageTest@36fc695d]" started-at="2024-07-14T17:18:00 IST" name="tearDown" finished-at="2024-07-14T17:18:00 IST" duration-ms="177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.automation.tests.LoginPageTest@3c41ed1d]" started-at="2024-07-14T23:42:58 IST" name="tearDown" finished-at="2024-07-14T23:42:58 IST" duration-ms="214" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Session has been ended]]>
@@ -87,6 +87,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.tests.LoginPageTest -->
-    </test> <!-- Regression1 -->
-  </suite> <!-- Regression -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

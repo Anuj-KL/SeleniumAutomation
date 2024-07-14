@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ConfigReader {
 
-	static Properties properties;
+	Properties properties;
 	
 	public ConfigReader() {
 		File src = new File("./Config/config.properties");
@@ -17,11 +17,11 @@ public class ConfigReader {
 			properties.load(fis);
 			
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println("Not able to read config. file" + e.getMessage());
 		}
 	}
 	
-	public static String getValueFromConfig(String key) {
+	public String getValueFromConfig(String key) {
 		return properties.getProperty(key);
 	}
 	
