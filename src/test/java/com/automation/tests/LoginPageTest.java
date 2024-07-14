@@ -20,7 +20,7 @@ public class LoginPageTest extends BaseClass {
 		logger.info("Starting application");
 		
 		loginPage.loginToApplication(excel.getStringData("UserData", 0, 0), excel.getStringData("UserData", 0, 1));	
-		
+		System.out.println("Push and trigger build");
 		
 	}
 }
